@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="estilodoscuros.css"> <!-- Ligue seu arquivo CSS aqui -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="cursos">
+        <div class="container">
+            <h1>Nossos Cursos</h1>
+            <div class="curso">
+                <h2>Introdução à Finanças</h2>
+                <p>Descrição do curso de introdução à finanças.</p>
+                <a href="introducao-financas.html">Saiba mais</a>
+            </div>
+            <div class="curso">
+                <h2>Dicas para Orçamento</h2>
+                <p>Descrição do curso de dicas para orçamento.</p>
+                <a href="dicas-orcamento.html">Saiba mais</a>
+            </div>
+            <div class="curso">
+                <h2>Como Lidar com Dívidas</h2>
+                <p>Descrição do curso sobre como lidar com dívidas.</p>
+                <a href="lidar-dividas.html">Saiba mais</a>
+            </div>
+            <!-- Adicione mais cursos conforme necessário -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const saibaMaisLinks = document.querySelectorAll(".curso a");
+    
+        saibaMaisLinks.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                alert("Você clicou em 'Saiba mais'. Implemente a ação desejada aqui.");
+            });
+        });
+    });</script>
+</body>
+</html>
