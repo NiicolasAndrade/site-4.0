@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="estilodoscuros.css"> <!-- Ligue seu arquivo CSS aqui -->
+    <title>Cursos - Sua Empresa</title>
+    <link rel="stylesheet" href="estilodoscuros.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
     <header>
@@ -19,57 +20,62 @@
         </nav>
     </header>
     
-    <section class="cursos">
-        <div class="container">
-            <h1>Nossos Cursos Disponíveis</h1>
-            <div class="curso">
-                <h2>Introdução à Finanças</h2>
-                <p>Este curso introdutório aborda os conceitos básicos de finanças pessoais e investimentos.</p>
-                <a href="introducao-financas.html">Saiba mais</a>
+    <main>
+        <section class="cursos">
+            <div class="container">
+                <h1>Nossos Cursos Disponíveis</h1>
+                <article class="curso">
+                    <h2>Introdução à Finanças</h2>
+                    <p>Este curso introdutório aborda os conceitos básicos de finanças pessoais e investimentos.</p>
+                    <a href="introducao-financas.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Dicas para Orçamento</h2>
+                    <p>Descubra como criar um orçamento eficaz e gerenciar suas despesas com nosso curso de dicas de orçamento.</p>
+                    <a href="dicas-orcamento.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Lidar com Dívidas</h2>
+                    <p>Aprenda estratégias para lidar com dívidas e criar um plano para se livrar delas.</p>
+                    <a href="lidar-dividas.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Economizar Dinheiro</h2>
+                    <p>Descubra dicas e truques para economizar dinheiro e aumentar sua poupança.</p>
+                    <a href="economizar-dinheiro.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Investir</h2>
+                    <p>Aprenda os princípios de investimento e como criar um portfólio de investimento diversificado.</p>
+                    <a href="como-investir.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Como Criar um Plano Financeiro</h2>
+                    <p>Saiba como criar um plano financeiro sólido para atingir seus objetivos financeiros de longo prazo.</p>
+                    <a href="plano-financeiro.html">Saiba mais</a>
+                </article>
+                <article class="curso">
+                    <h2>Análise de Balanços</h2>
+                    <p>Este curso de análise de balanços fornece insights sobre a saúde financeira das empresas.</p>
+                    <a href="analise-balancos.html">Saiba mais</a>
+                </article>
             </div>
-            <div class="curso">
-                <h2>Dicas para Orçamento</h2>
-                <p>Descubra como criar um orçamento eficaz e gerenciar suas despesas com nosso curso de dicas de orçamento.</p>
-                <a href="dicas-orcamento.html">Saiba mais</a>
-            </div>
-            <div class="curso">
-                <h2>Como Lidar com Dívidas</h2>
-                <p>Aprenda estratégias para lidar com dívidas e criar um plano para se livrar delas.</p>
-                <a href="lidar-dividas.html">Saiba mais</a>
-            </div>
-            <div class="curso">
-                <h2>Como Economizar Dinheiro</h2>
-                <p>Descubra dicas e truques para economizar dinheiro e aumentar sua poupança.</p>
-                <a href="economizar-dinheiro.html">Saiba mais</a>
-            </div>
-            <div class="curso">
-                <h2>Como Investir</h2>
-                <p>Aprenda os princípios de investimento e como criar um portfólio de investimento diversificado.</p>
-                <a href="como-investir.html">Saiba mais</a>
-            </div>
-            <div class="curso">
-                <h2>Como Criar um Plano Financeiro</h2>
-                <p>Saiba como criar um plano financeiro sólido para atingir seus objetivos financeiros de longo prazo.</p>
-                <a href="plano-financeiro.html">Saiba mais</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Seu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const saibaMaisLinks = document.querySelectorAll(".curso a");
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const saibaMaisLinks = document.querySelectorAll(".curso a");
 
-            saibaMaisLinks.forEach(link => {
-                link.addEventListener("click", function(event) {
-                    // Eventualmente, você pode redirecionar o usuário para a página do curso em vez de exibir um alerta
-                    event.preventDefault();
-                    alert("Você clicou em 'Saiba mais'. Implemente a ação desejada aqui.");
-                });
+        saibaMaisLinks.forEach(link => {
+            link.addEventListener("click", function(event) {
+                // Eventualmente, você pode redirecionar o usuário para a página do curso em vez de exibir um alerta
+                event.preventDefault();
+                alert("Você clicou em 'Saiba mais'. Implemente a ação desejada aqui.");
             });
         });
-    </script>
+    });</script>
 </body>
 </html>
